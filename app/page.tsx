@@ -161,7 +161,7 @@ export default function Home() {
         <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
           <div>
             <h1 style={{ fontSize: '2.5rem', color: 'var(--primary-glow)', marginBottom: '0.25rem', fontWeight: 800 }}>Bacheo Recovery</h1>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>M\u00f3dulo de Carga Masiva - 3ra Etapa</p>
+            <p style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>Módulo de Carga Masiva - 3ra Etapa</p>
           </div>
           {status === 'uploading' && (
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-glow)', fontSize: '0.875rem', fontWeight: 600 }}>
@@ -271,7 +271,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
                 style={{ padding: '1rem', background: 'rgba(16, 185, 129, 0.1)', color: 'var(--success)', borderRadius: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}
               >
-                <CheckCircle2 size={18} /> Evidencia registrada con \u00e9xito.
+                <CheckCircle2 size={18} /> Evidencia registrada con éxito.
               </motion.div>
             )}
 
@@ -303,7 +303,7 @@ export default function Home() {
           
           <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             {history.length === 0 ? (
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textAlign: 'center', marginTop: '2rem' }}>Ninguna carga a\u00fan</p>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textAlign: 'center', marginTop: '2rem' }}>Ninguna carga aún</p>
             ) : (
               history.map(item => (
                 <div key={item.id} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', background: 'rgba(255,255,255,0.02)', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border)' }}>
