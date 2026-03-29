@@ -1,0 +1,19 @@
+# node_modules
+node_modules/
+
+# next.js
+.next/
+out/
+
+# env files
+.env*.local
+
+# test / logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+data/history.json
+
+# misc
+.DS_Store
+*.pem
